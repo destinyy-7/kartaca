@@ -1,0 +1,12 @@
+const UsersReducer = (state = [], action) => {
+  switch (action.type) {
+    case "GET_USERS":
+      return { ...state, getusers: action.payload };
+      case "GET_SEARCH":
+        return { ...state, search: action.payload };
+    default:
+      return state;
+  }
+};
+
+export default UsersReducer;
